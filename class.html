@@ -1,29 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Helvetica, sans-serif;
+        }
+
+        #dice {
+            font-size: 320px;
+        }
+
+        #dice:hover {
+            cursor: help;
+        }
+    </style>
 </head>
 
-
 <body>
-    <div class="wrapper" >
-        <h1>Stopwatch</h1>
-        <p><span id="min">00</span> : <span id="sec">00</span> : <span id="milsec">00</span> : </p>
-        <button id="start">Start</button>
-        <button id="stop">Stop</button>
-        <button id="reset">Reset</button>
-        <br>
-        <br>
-        <br>
-        <button id="add10seconds">Add 10 seconds</button>
-        <button id="add1min">Add 1 Minute</button>
-        <button id="add10min">Add 10 Minutes</button>
-    </div>
+    <div>Click on the Dice...</div>
+    <div id="dice" onclick="stopstart()"></div>
+
+
+
 </body>
 
 
+<script src="class.js"></script>
 
 </html>
